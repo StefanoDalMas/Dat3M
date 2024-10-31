@@ -1,12 +1,11 @@
 package com.dat3m.dartagnan.expression.type;
 
-import com.dat3m.dartagnan.expression.Type;
-import com.dat3m.dartagnan.utils.Normalizer;
-
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.dat3m.dartagnan.expression.Type;
+import com.dat3m.dartagnan.utils.Normalizer;
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -23,6 +22,7 @@ public final class TypeFactory {
     private TypeFactory() {
         pointerDifferenceType = getIntegerType(64);//TODO insert proper pointer and difference types
     }
+
 
     //TODO make this part of the program.
     public static TypeFactory getInstance() {
