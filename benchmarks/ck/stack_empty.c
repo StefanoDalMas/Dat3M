@@ -3,8 +3,13 @@
 #include <ck_stack.h>
 #include <assert.h>
 
+<<<<<<< HEAD
 #ifndef NUM_PUSH_PER_THREAD
 #define NUM_PUSH_PER_THREAD 3
+=======
+#ifndef NUM_PUSH_PER_THREADS
+#define NUM_PUSH_PER_THREADS 3
+>>>>>>> f0f4f5d2c (cleaned benchmarks and regenerated ll files for ck)
 #endif
 
 #ifndef NUM_PUSHERS
