@@ -30,6 +30,8 @@ import static com.dat3m.dartagnan.utils.ResourceHelper.getRootPath;
 import static com.dat3m.dartagnan.utils.ResourceHelper.getTestResourcePath;
 import static org.junit.Assert.assertEquals;
 
+import ap.Prover;
+
 @RunWith(Parameterized.class)
 public class AsmCkArmv7Test {
 
@@ -68,7 +70,7 @@ public class AsmCkArmv7Test {
                 cfg,
                 BasicLogManager.create(cfg),
                 ShutdownManager.create().getNotifier(),
-                SolverContextFactory.Solvers.YICES2);
+                SolverContextFactory.Solvers.Z3);
     }
 
     private ProverWithTracker mkProver(SolverContext ctx) {
